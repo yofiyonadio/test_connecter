@@ -1,0 +1,40 @@
+{
+	"include": [
+		"./src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules/*",
+		"./src/**/*.json"
+	],
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"rootDir": "./",
+		"lib": [
+			"es5",
+			"es6",
+			"es2017.object",
+			"es2016.array.include",
+			"esnext.asynciterable",
+			"ES2020"
+		],
+		"target": "es6",
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"outDir": "./build",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"sourceMap": false,
+		"allowSyntheticDefaultImports": true,
+		"removeComments": true,
+		"listEmittedFiles": false,
+		"resolveJsonModule": true,
+		"declaration": false,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"strictPropertyInitialization": false,
+		"strict": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": false,
+		"strictNullChecks": false,
+	}
+}
